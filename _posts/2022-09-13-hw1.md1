@@ -7,3 +7,20 @@ description: This post is a practice post to understand how posts are created.
 image: /assets/images/blog-image.jpg
 ---
 
+# Practice Post
+
+## Different writing formats
+Here I will try out multiple ways to stylaize writes. 
+**This is bold text**
+*This is italicized text*
+~~You can cross through text~~
+***This text is bold an italic***
+<sub>This text is a subscript</sub>
+
+##Typing with quotes
+This text is normal but a quote can be added in as such. 
+> This text is now a quote
+
+##To create a link
+You can wrap the text in brackets that will have a link but put the actual link in parentheses. 
+Click [this link](https://www.surfline.com/) to visit surfline. 
