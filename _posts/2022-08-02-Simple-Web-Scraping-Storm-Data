@@ -58,4 +58,6 @@ Using the pandas function will be the next step as we know the HMTL code has a "
 ![HTML Code](https://github.com/ScottyZam/stat386-projects/raw/main/assets/images/dataframe.png)
 
 # Summary
-We now have a dataset with the information we wanted! This was one simple example of how to scrape data from a webpage. With this method and many others, that you can read about [here](https://limeproxies.netlify.app/blog/top-10-web-scraping-techniques), you can obtain all kinds of data and information via web scraping. With this type of freedom to online data you can practice any type of analytics or data science you desire. 
+We now have a dataset with the information we wanted! This was one simple example of how to scrape data from a webpage. With this method and many others, that you can read about [here](https://limeproxies.netlify.app/blog/top-10-web-scraping-techniques), you can obtain all kinds of data and information via web scraping. With this type of freedom to online data you can practice any type of analytics or data science you desire.
+
+Please refer to [this link](https://github.com/ScottyZam/WebScraping) to examine the repository. 
