@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "Simple Web Scraping: Storm Data"
+date:   2022-10-20 11:24:47 -0700
+author: Scotty Zambrano
+description: A simple web scraping method demonstrated on storm data in python.  
+image: /assets/images/image5.jpg
+---
+
+
+
+Web scraping is the process of obtaining information from html code within specific web pages. There are many reasons to scrap information off the internet but a very common reason is to obtain data and create new dataframes. Just as creating dataframes can be done in various ways, there are a multitude of diverse ways to scrape data off of the internet. This post will explore some of the simplest, using beautiful soup and pandas to get tables. 
+For more information about beautiful soup and web scraping check these resources below:
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [Markdown Guide](https://www.geeksforgeeks.org/what-is-web-scraping-and-how-to-use-it/)
+
+# What do we want to scrape? 
+The first step in web scraping is figuring out what it is that we want to scrape and where to find it. In this example we will be scraping storm data from [this site](https://en.wikipedia.org/wiki/List_of_natural_disasters_in_the_United_States). The elements of each web page can be visualized and explored by right clicking and selecting "inspect", here you can know a little bit more about what it will take to scrape the web page. The page in this example will be fairly simple because all of the data is put into a "table" within the HTML code, this will make more sense soon. 
+
+# Inspect the elements of your desired web page.
+In most cases web scraping will require some understanding of the HTML code that makes up the specific web page. In basic terms, one wants to know what specific elements of the HTMl code make up different aspects of the web page in order to know how scraping can be done. As mentioned in the previous paragraph, the easiest way to inspect HTML code of the web page is to right click the page and select "Inspect" (as shown below). Once this is done, you will see the code pop up on the right side of the screen, adjacent to the web page (also shown below). As you hover of different blocks of code, the part of the site that is associated with the code block will become highlighted, allowing you to navigate to the desired portion easily. 
+
+![Inspect](https://github.com/ScottyZam/stat386-projects/raw/main/assets/images/Inspect.png)
+![HTML Code](https://github.com/ScottyZam/stat386-projects/raw/main/assets/images/CodeAndPage.png)
+
+# Import the correct libraries
+
+`import pandas as pd`
+
+`from bs4 import BeautifulSoup`
+
+`import requests`
+
+We will be using BeautifulSoup which helps us parse the HTML code and search through it to find specific snipets of code chunk. Given that our chosen web page has a specific format of HTML code where the data is all under a tab called "table" we actually don't need to sift through much code at all. Instead we can use the pandas function; read_html(). 
+
+# Web scraping code 
+First we read in the url from our web page. 
+
+`url = 'https://en.wikipedia.org/wiki/List_of_natural_disasters_in_the_United_States'`
+
+We then use the "requests" and "BeautifulSoup" packages to obtain the HTML code from the url. 
+
+`r = requests.get(url)`
+
+`r.status_code`
+
+`soup = BeautifulSoup(r.text)`
+
+This soup object would allow us to use the BeautifulSoup to parse the HTML code. 
+
+Using the pandas function will be the next step as we know the HMTL code has a "table" code chunk which contains all of the data we want. In this page we can see that the third table is the one we want. 
+
+`tables = pd.read_html(url)`
+
+`df = tables[2]`
+
+`df.head()`
+
+![HTML Code](https://github.com/ScottyZam/stat386-projects/raw/main/assets/images/dataframe.png)
+
