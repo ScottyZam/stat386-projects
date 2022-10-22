@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "Simple Web Scraping: Natural Disasters"
-date:   2022-10-20 11:24:47 -0700
+title:  "Web Scraping data: Natural Disasters"
+date:   2022-10-20
 author: Scotty Zambrano
-description: A simple web scraping method demonstrated on storm data in python.  
-image: /assets/images/image5.jpg
+description: A simple example on web scraping in python.
+image: /assets/images/LinearRegression.png
 ---
-
 
 
 Web scraping is the process of obtaining information from html code within specific web pages. There are many reasons to scrap information off the internet but a very common reason is to obtain data and create new dataframes. Just as creating dataframes can be done in various ways, there are a multitude of diverse ways to scrape data off of the internet. This post will explore some of the simplest, using beautiful soup and pandas to get tables. 
