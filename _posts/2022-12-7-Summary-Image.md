@@ -4,7 +4,7 @@ title:  "Natural Disasters Summary"
 date:   2022-12-7
 author: Scotty Zambrano
 description: An overall summary of interesting findings from my Natural Disasters data. 
-image: 
+image: /assets/images/fire.png
 ---
 
 ## Summary of the "Natural Disasters" data project
