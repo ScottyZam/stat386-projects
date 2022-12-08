@@ -17,9 +17,4 @@ The most prominent natural disasters found within the data fell into four catego
 ## Summary Image
 
 ## Conclusion
-This summary of the data was focused in on one specific aspect that I thought was most important. The beauty with data is there are seemingly endless options for exploration and prediction. I hope you enjoyed scrapping, exploring, and understanding this data with me and if you have any suggestions on what I could have done differently or what I could do in future posts, please let me know in the comments. If you would like to see the code, click on this link for my GitHub repository. 
-
-summarizes your entire project (from data collection to now 1-2 paragraphs),
-summarizes your data story (1 paragraph)
-shows your graphic
-has a link to the github repository(s) that contain(s) all the work associated with your project(s) 
+This summary of the data was focused in on one specific aspect that I thought was most important. The beauty with data is there are seemingly endless options for exploration and prediction. I hope you enjoyed scrapping, exploring, and understanding this data with me and if you have any suggestions on what I could have done differently or what I could do in future posts, please let me know in the comments. If you would like to see the code, click on [this link](https://github.com/ScottyZam/WebScraping) for my GitHub repository. 
